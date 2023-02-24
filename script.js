@@ -27,6 +27,7 @@ function generateCard() {
     dealtCards.push(card);
     cardEl.classList.remove('hidden');
     cardEl.src = `card-${card}.png`;
+    document.querySelector('.name').textContent = dealtCards.length;
   } else {
     if (dealtCards.length !== 19) {
       generateCard();
