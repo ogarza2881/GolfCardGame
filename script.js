@@ -10,12 +10,12 @@ const btnDrawCard = document.querySelector('.btn--draw-card');
 
 //////////////////////////////////////////////////Set initial Values
 cardEl.classList.add('hidden');
-document.querySelector('.name').textContent = 'Click New Card';
+document.querySelector('.name').textContent = '';
 
 //////////////////////////////////////////////////// Event Handlers
 // Roll Dice functionality
 btnDrawCard.addEventListener('click', () => {
-  document.querySelector('.name').textContent = 'Card Selected';
+  document.querySelector('.name').textContent = '';
   // 1. Generate random dice roll between 1-6
   const card = Math.trunc(Math.random() * 19) + 1;
   // 2. Display dice
@@ -25,7 +25,7 @@ btnDrawCard.addEventListener('click', () => {
 });
 
 btnDrawCard.addEventListener('touchstart', () => {
-  document.querySelector('.name').textContent = 'Card Selected';
+  document.querySelector('.name').textContent = '';
   // 1. Generate random dice roll between 1-6
   const card = Math.trunc(Math.random() * 8) + 1;
   // 2. Display dice
@@ -35,10 +35,10 @@ btnDrawCard.addEventListener('touchstart', () => {
 
 btnNew.addEventListener('click', () => {
   cardEl.classList.add('hidden');
-  document.querySelector('.name').textContent = 'Click New Card';
+  document.querySelector('.name').textContent = '';
 });
 
 btnNew.addEventListener('touchstart', () => {
   cardEl.classList.add('hidden');
-  document.querySelector('.name').textContent = 'Click New Card';
+  document.querySelector('.name').textContent = '';
 });
